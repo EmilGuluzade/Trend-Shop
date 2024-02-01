@@ -1,9 +1,9 @@
 import React from "react";
 import "./HeaderCartButton.css"
 import CardIcon from "../Cart/CartIcon";
-const HeaderCartButton = () => {
+const HeaderCartButton = ({showCartHandler}) => {
   return (
-    <button className="button">
+    <button className="button" onClick={showCartHandler}>
       <span className="icon">
       <CardIcon></CardIcon>
         
